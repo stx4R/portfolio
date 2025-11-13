@@ -142,10 +142,10 @@
   // 좌클릭/우클릭 금지
   document.addEventListener('mousedown', function(e) {
       if (e.button === 0) { // 좌클릭
-          alert('좌클릭 금지!');
+          alert('Left click is prohibited for security.');
           e.preventDefault();
       } else if (e.button === 2) { // 우클릭
-          alert('우클릭 금지!');
+          alert('Right click is prohibited for security.');
           e.preventDefault();
       }
   });
@@ -154,17 +154,17 @@
   document.addEventListener('keydown', function(e) {
       // F12
       if(e.key === 'F12') {
-          alert('개발자 도구 접근 금지!');
+          alert('Access of Developer Tool is blocked for security.');
           e.preventDefault();
       }
       // Ctrl+Shift+I, Ctrl+Shift+J
       if(e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) {
-          alert('개발자 도구 접근 금지!');
+          alert('Access of Developer Tool is blocked for security.');
           e.preventDefault();
       }
       // Ctrl+U (소스 보기)
       if(e.ctrlKey && e.key === 'U') {
-          alert('소스 보기 금지!');
+          alert('Watching source is prohibited for security.');
           e.preventDefault();
       }
   });
