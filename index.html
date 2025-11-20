@@ -161,15 +161,15 @@
 
   document.addEventListener('keydown', function(e) {
     if (e.key === 'F12') {
-      alert('Access of Developer Tool is blocked for security.');
+      alert('🚫 Access of Developer Tool is blocked for security.');
       e.preventDefault();
     }
     if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) {
-      alert('Access of Developer Tool is blocked for security.');
+      alert('🚫 Access of Developer Tool is blocked for security.');
       e.preventDefault();
     }
     if (e.ctrlKey && e.key === 'U') {
-      alert('Watching source is prohibited for security.');
+      alert('🚫 Watching source is prohibited for security.');
       e.preventDefault();
     }
   });
